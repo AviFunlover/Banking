@@ -34,14 +34,14 @@ public class Branch {
         System.out.println("Customer " + customer.getName() + " already exists in Arraylist.\nCannot add as a new customer.");
         return false;
     }
-    public Boolean addTransaction(String name) {
-        int index = customerAlreadyExist(name);
-        if(index >= 0) {
-            System.out.println("Give the amount you want to add to transaction: ");
-            branch.get(index).addTransaction(Double.parseDouble(scanner.nextLine()));
-            return true;
-        }
-        System.out.println("Account of name " + name + " does not exist. Cannot add Transaction ");
-        return false;
-    }
+//     public Boolean addTransaction(String name) {
+//         int index = customerAlreadyExist(name);
+//         if(index >= 0) {
+//             System.out.println("Give the amount you want to add to transaction: ");
+//             branch.get(index).addTransaction(Double.parseDouble(scanner.nextLine()));
+//             return true;
+//         }
+//         System.out.println("Account of name " + name + " does not exist. Cannot add Transaction ");
+//         return false;
+//     }
 }
